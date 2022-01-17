@@ -14,11 +14,11 @@ I used two datasets to proceed further namely, streaminghistorymerged.csv and Sp
 
 The 3 streaming history files were then converted to csv through a python script and then later merged into one file called ‘streamingHostorymerged.csv’. It has 22,706 rows and 4 columns namely artist, date(time when the stream ended), msPlayed(minutes in milliseconds) and trackName. The SpotifyAudioFeaturesApril2019.csv file contains 130,663 rows and 17 columns and they are related to the songs features like acousticness, liveliness, popularity, instrumentalness etc.
 
-## Why use the features of the song?
+### Why use the features of the song?
 
 The features of a song are quite important here in predicting a user’s music taste. For example, a song which is good for dancing will have a maximum danceability value of 1 and will be a good song to shake a leg. If we want to find a song with a good energy, the energy feature of that song should be 1, indicating that the track is energetic, fast, noisy and loud. Let’s say you like acoustic music a lot more, then one would look for an acousticness value of 1. In the end, the features having a stronger correlation with the favorite songs are used to make the predictions.
 
-## Response Variable
+### Response Variable
 
 The response variable is a feature named ‘favorite’ which indicates whether the user likes the song based on values 1 and 0, 1 being a favorite. But, a criterion had to be determined to classify a song as a favorite. When a histogram was plotted grouping the artist and the track together, I could see that frequencies of the song suddenly dropped at after 12 counts, indicating that the songs having a count greater than 12 are the ones which I truly enjoy, and they were not just listened randomly or by chance. This process also eliminates certain songs that might complicate our model.
 
