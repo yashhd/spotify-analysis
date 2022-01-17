@@ -22,6 +22,8 @@ The features of a song are quite important here in predicting a user’s music t
 
 The response variable is a feature named ‘favorite’ which indicates whether the user likes the song based on values 1 and 0, 1 being a favorite. But, a criterion had to be determined to classify a song as a favorite. When a histogram was plotted grouping the artist and the track together, I could see that frequencies of the song suddenly dropped at after 12 counts, indicating that the songs having a count greater than 12 are the ones which I truly enjoy, and they were not just listened randomly or by chance. This process also eliminates certain songs that might complicate our model.
 
+![alt text](https://github.com/yashhd/spotify-analysis/blob/28973d5f9f694f4b62995b18423e42f0254b923f/data/favorite_count.png)
+
 
 
 
