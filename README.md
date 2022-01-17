@@ -24,5 +24,15 @@ The response variable is a feature named ‘favorite’ which indicates whether 
 
 <a href="url"><img src="https://github.com/yashhd/spotify-analysis/blob/28973d5f9f694f4b62995b18423e42f0254b923f/data/favorite_count.png" height="400"></a>
 
+### Results and Future Scope
+
+In order to select a good classifier, I compared 3 algorithms namely Random Forest Classifier, Logistic Regression Model and Decision Tree Model.
+The Logistic Regression model performed poorly with just 70% of mean f1-score after using 10-fold cross validation. Both the Random Forest classifier and the Decision Tree model performed great with 99% of mean f1 score. But the Random Forest model was better when numbers to the right of 0.99 were considered. Additionally, the Random Forest model performed better on the unseen test data set with a f1 score of 0.997, while the Decision Tree model had a score of 0.993. There isn’t much difference but if scores were to be considered, Random Forest performed better. Alternatively, one can also use a decision tree model which can yield similar results.
+
+In all, it helped me to generate recommendation of songs at at a massive scale instead of just limiting to a few songs like in Discover Weekly of Spotify. In future, I can automate the process of creating certain playlists by converting the predicted csv files into Spotify playlists which would be more convenient for me.
+
+
+
+
 
 
